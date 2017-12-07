@@ -13096,7 +13096,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="+3V37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V315" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="+3V34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="U1" library="SparkFun-IC-Power" library_urn="urn:adsk.eagle:library:526" deviceset="V_REG_317" device="SMD" package3d_urn="urn:adsk.eagle:package:39069/1"/>
@@ -13112,6 +13111,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J5" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1" value="ESC"/>
 <part name="J8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1" value="ESC"/>
 <part name="J9" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13190,7 +13190,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="+3V37" gate="G$1" x="127" y="157.48"/>
 <instance part="+3V33" gate="G$1" x="71.12" y="167.64"/>
 <instance part="+3V315" gate="G$1" x="256.54" y="147.32" rot="MR0"/>
-<instance part="+3V34" gate="G$1" x="81.28" y="33.02"/>
 <instance part="+3V35" gate="G$1" x="83.82" y="119.38"/>
 <instance part="+3V31" gate="G$1" x="12.7" y="119.38"/>
 <instance part="U1" gate="G$1" x="35.56" y="170.18" smashed="yes">
@@ -13209,6 +13208,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="J5" gate="G$1" x="154.94" y="96.52" rot="MR0"/>
 <instance part="J8" gate="G$1" x="154.94" y="104.14" rot="MR0"/>
 <instance part="J9" gate="G$1" x="10.16" y="142.24" rot="MR90"/>
+<instance part="P+2" gate="1" x="81.28" y="33.02"/>
 </instances>
 <busses>
 </busses>
@@ -13391,6 +13391,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="15.24" y1="162.56" x2="15.24" y2="147.32" width="0.1524" layer="91"/>
 <junction x="15.24" y="162.56"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="27.94" x2="81.28" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="27.94" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -13465,12 +13471,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="256.54" y1="139.7" x2="256.54" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="+3V315" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="27.94" x2="81.28" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="27.94" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="+3V34" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
