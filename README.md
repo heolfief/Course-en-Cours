@@ -11,7 +11,7 @@ We choosed to works with the **Arduino environnement**, to make it possible for 
 
 This project is **realesed under the general public license and is strongly welcome to modifications**.
 
-##Hardware
+## Hardware
 
 The hardware is based on 4 main components:
 - ATmega328p microcontroller (the same as the arduino uno/nano)
@@ -24,4 +24,4 @@ This board is **fully arduino compatible** and should be selected in the arduino
 PCB pinout diagram:
 ![PCB pinout](https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_pinout.jpg)
 
-##Software
+## Software
