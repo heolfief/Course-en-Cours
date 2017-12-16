@@ -37,6 +37,12 @@ This project is **realesed under the general public license and is strongly welc
 
 In order to be able to program your board with the arduino IDE via usb, you will first need to install a bootloader on your board. Sparkfun have made an easy to understand tutorial on how to do that here : <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader">Installing an arduino bootloader</a>
 
+Here is the wiring diagram to install the bootloader with an arduino UNO (follow the sparkfun tutorial for step by step instructions).
+
+<p align="center">
+  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/Bootloader_ICSP.png" alt="" width=789 height=413>
+</p>
+
 When installing the bootloader, make sure your arduino target board is the arduino nano, as this board is arduino nano compatible.
 
 When this step is done you should be able to programm your board like if it was an arduinon nano.
@@ -68,6 +74,11 @@ This board is **fully arduino compatible** and should be selected in the arduino
 
 ### PCB pinout diagram:
 ![PCB pinout](https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_pinout.jpg)
+
+### PCB wiring diagram:
+<p align="center">
+  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_wiring.png" alt="" width=876 height=398>
+</p>
 
 ## Software
 
