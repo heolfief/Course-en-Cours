@@ -3,13 +3,13 @@
     <img src="http://www.course-en-cours.com/media/uploads/documents_utils/CeC-logo2017.png" alt="" width=355 height=206>
   </a>
 
-  <h1 align="center">Course en cours</h3>
+  <h1 align="center">Course en cours</h1>
 
   <p align="center">
     <a href="http://www.course-en-cours.com/">www.course-en-cours.com</a>
   </p>
 </p>
-
+<HR>
 <br>
 
 
