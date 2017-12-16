@@ -42,6 +42,14 @@ The hardware is based on 4 main components:
 
 This board is **fully arduino compatible** and should be selected in the arduino environnement as the arduino nano.
 
+### Documents availables
+
+- <a href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Schematics.pdf">Schematics (PDF)</a>
+- <a href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/BOM.pdf">Bill of materials (PDF)</a>
+- <a href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Carte%20course%20en%20cours.sch">Autodesk Eagle schematics file</a>
+- <a href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Carte%20course%20en%20cours.brd">Autodesk Eagle board file</a>
+
+
 ### PCB pinout diagram:
 ![PCB pinout](https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_pinout.jpg)
 
