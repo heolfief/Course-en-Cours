@@ -1,9 +1,17 @@
-# Course-en-Cours
+<p align="center">
+  <a href="http://www.course-en-cours.com/">
+    <img src="http://www.course-en-cours.com/media/uploads/documents_utils/CeC-logo2017.png" alt="" width=355 height=206>
+  </a>
 
+  <h1 align="center">Course en cours</h3>
 
-![Course en cours logo](http://www.course-en-cours.com/media/uploads/documents_utils/CeC-logo2017.png)
+  <p align="center">
+    <a href="http://www.course-en-cours.com/">www.course-en-cours.com</a>
+  </p>
+</p>
 
-[FRENCH] **http://www.course-en-cours.com/**
+<br>
+
 
 This project contains hardware, software and documentation files for the "course en cours" **educationnal competition in France**.
 During a year, teams of 4 to 6 middle/high school **students build their small electic car** using the same tools as engineers. the contest consists of **designing, creating, testing and running** a small model car during the** regional competitions**, to acces the **national final**.
