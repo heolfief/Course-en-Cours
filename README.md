@@ -77,7 +77,7 @@ This board is **fully arduino compatible** and should be selected in the arduino
 
 ### PCB wiring diagram:
 <p align="center">
-  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_wiring.png" alt="" width=876 height=398>
+  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_wiring.png" alt="" width=856 height=428>
 </p>
 
 ## Software
