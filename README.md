@@ -27,7 +27,7 @@
 This project contains hardware, software and documentation files for the "course en cours" **educationnal competition in France**.
 During a year, teams of 4 to 6 middle/high school **students build their small electic car** using the same tools as engineers. the contest consists of **designing, creating, testing and running** a small model car during the** regional competitions**, to acces the **national final**.
 
-We are two university students in electrical engineering and industrial data processing, from <a href="https://iut-rennes.univ-rennes1.fr/">IUT de Rennes</a>, France.
+We are two university students in electrical engineering and industrial data processing, from <a href="https://iut-rennes.univ-rennes1.fr/les-6-departements/genie-electrique-informatique-industrielle">IUT de Rennes</a>, France.
 Our project is to **integrate embedded telemetry, datalogging and manual control** into the existings cars engines.
 We choosed to works with the **Arduino environnement**, to make it possible for everybody to program their car, modify it as they like, and to make programming accesible for the young people of the competition.
 
