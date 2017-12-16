@@ -12,6 +12,14 @@
 <HR>
 <br>
 
+## Table of contents
+
+- [Description](#Description)
+- [Hardware](#Hardware)
+- [Software](#Software)
+
+
+## Description
 
 This project contains hardware, software and documentation files for the "course en cours" **educationnal competition in France**.
 During a year, teams of 4 to 6 middle/high school **students build their small electic car** using the same tools as engineers. the contest consists of **designing, creating, testing and running** a small model car during the** regional competitions**, to acces the **national final**.
