@@ -80,6 +80,8 @@ This board is **fully arduino compatible** and should be selected in the arduino
   <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_wiring.png" alt="" width=856 height=428>
 </p>
 
+**BE CAREFULL: You need to provide 3.3V to the board, plugging directly the 11.1V LiPo battery will kill it. You can step down the battery voltage with a standard DC/DC converter (also known as buck-converter) set to output 3.3V (min 200mA), like in the wiring diagram above.**
+
 ## Software
 
 ## Creators
