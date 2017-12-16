@@ -14,9 +14,11 @@
 
 ## Table of contents
 
-- [Description](#Description)
-- [Hardware](#Hardware)
-- [Software](#Software)
+- [Description](#description)
+- [Hardware](#hardware)
+- [Software](#software)
+- [Creators](#creators)
+- [Copyright and license](#copyright-and-license)
 
 
 ## Description
@@ -44,3 +46,18 @@ PCB pinout diagram:
 ![PCB pinout](https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_pinout.jpg)
 
 ## Software
+
+## Creators
+
+**Heol Fief**
+
+- <https://github.com/heolfief>
+
+**Dylan Gageot**
+
+- <https://github.com/dylangageot>
+
+## Copyright and license
+heolfief/Course-en-Cours is licensed under the GNU General Public License v3.0.
+
+See the <a href="https://github.com/heolfief/Course-en-Cours/blob/master/LICENSE">LICENSE file</a> for more informations.
