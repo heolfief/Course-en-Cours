@@ -42,7 +42,7 @@ The hardware is based on 4 main components:
 
 This board is **fully arduino compatible** and should be selected in the arduino environnement as the arduino nano.
 
-PCB pinout diagram:
+### PCB pinout diagram:
 ![PCB pinout](https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_pinout.jpg)
 
 ## Software
