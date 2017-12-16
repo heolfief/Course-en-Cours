@@ -15,6 +15,7 @@
 ## Table of contents
 
 - [Description](#description)
+- [Where to start](#where-to-start)
 - [Hardware](#hardware)
 - [Software](#software)
 - [Creators](#creators)
@@ -31,6 +32,21 @@ Our project is to **integrate embedded telemetry, datalogging and manual control
 We choosed to works with the **Arduino environnement**, to make it possible for everybody to program their car, modify it as they like, and to make programming accesible for the young people of the competition.
 
 This project is **realesed under the general public license and is strongly welcome to modifications**.
+
+## Where to start
+
+In order to be able to program your board with the arduino IDE via usb, you will first need to install a bootloader on your board. Sparkfun have made an easy to understand tutorial on how to do that here : <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader">Installing an arduino bootloader</a>
+
+When installing the bootloader, make sure your arduino target board is the arduino nano, as this board is arduino nano compatible.
+
+When this step is done you should be able to programm your board like if it was an arduinon nano.
+
+Just install the course-en-cours library (<a href="#software">link in the software section</a>) and import it to your arduino sketch.
+<a href="https://www.arduino.cc/en/Guide/Libraries">Here is a tutorial</a> if you need help for this step.
+
+You should now be able to use the functions described in the software section.
+
+
 
 ## Hardware
 
