@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://www.course-en-cours.com/">
-    <img src="http://www.course-en-cours.com/media/uploads/documents_utils/CeC-logo2017.png" alt="" width=355 height=206>
+    <img src="http://www.course-en-cours.com/media/uploads/documents_utils/CeC-logo2017.png" alt="" width=360>
   </a>
 
   <h1 align="center">Course en cours</h1>
@@ -40,7 +40,7 @@ In order to be able to program your board with the arduino IDE via usb, you will
 Here is the wiring diagram to install the bootloader with an arduino UNO (follow the sparkfun tutorial for step by step instructions).
 
 <p align="center">
-  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/Bootloader.png" alt="" width=789 height=413>
+  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/Bootloader.png" alt="" width=800>
 </p>
 
 When installing the bootloader, make sure your arduino target board is the arduino nano, as this board is arduino nano compatible.
@@ -77,7 +77,7 @@ This board is **fully arduino compatible** and should be selected in the arduino
 
 ### PCB wiring diagram:
 <p align="center">
-  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_wiring.png" alt="" width=856 height=428>
+  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_wiring.png" alt="" width=870>
 </p>
 
 **BE CAREFULL: You need to provide 3.3V to the board, plugging directly the 11.1V LiPo battery will kill it. You can step down the battery voltage with a standard DC/DC converter (also known as buck-converter) set to output 3.3V (min 200mA), like in the wiring diagram above.**
