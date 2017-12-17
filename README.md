@@ -40,7 +40,7 @@ In order to be able to program your board with the arduino IDE via usb, you will
 Here is the wiring diagram to install the bootloader with an arduino UNO (follow the sparkfun tutorial for step by step instructions).
 
 <p align="center">
-  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/Bootloader_ICSP.png" alt="" width=789 height=413>
+  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/Bootloader.png" alt="" width=789 height=413>
 </p>
 
 When installing the bootloader, make sure your arduino target board is the arduino nano, as this board is arduino nano compatible.
