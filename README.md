@@ -35,7 +35,7 @@ This project is **realesed under the general public license and is strongly welc
 
 ## Where to start
 
-In order to be able to program your board with the arduino IDE via usb, you will first need to install a bootloader on your board.
+In order to be able to program your board with the arduino IDE via usb, you will first need to install a bootloader on your board. Find insruction on how to do that in the <a href="#bootloader">software section</a>.
 
 When this step is done you should be able to programm your board like if it was an arduinon nano.
 
