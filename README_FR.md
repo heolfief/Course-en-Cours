@@ -35,31 +35,31 @@ Ce projet est sous **license libre GPU** (<a target="_blank" href="https://githu
 
 ## Par où commencer
 
-In order to be able to program your board with the arduino IDE via usb, you will first need to install a bootloader on your board. Find insruction on how to do that in the <a href="#bootloader">software section</a>.
+Pour pouvoir programmer votre carte course en cours avec l'IDE d'arduino via USB, vous devez d'abord y installer un bootloader.
+Vous trouverez les instructions nécessaires dans la section <a href="#logiciel">logicielle</a>.
 
-When this step is done you should be able to programm your board like if it was an arduinon nano.
+Après cette étape faite, vous devriez pouvoir programmer votre carte comme si elle était un arduino nano.
 
-Just install the course-en-cours library (<a href="#software">link in the software section</a>) and import it to your arduino sketch.
-<a target="_blank" href="https://www.arduino.cc/en/Guide/Libraries">Here is a tutorial</a> if you need help for this step.
+Il vous suffit d'installer la bibliothèque course-en-cours (<a href="#logiciel">lien dans la section logicielle</a>) et importez-la dans votre croquis arduino. <a target="_blank" href="https://www.arduino.cc/en/Guide/Libraries">Voici un tutoriel</a> pour importer une bibliothèque si vous avez besion d'aide.
 
-You should now be able to program your board via USB, as described in the <a href="#software">software section</a>.
+Vous pouvez maintenant programmer votre carte, comme décrit dans la section <a href="#logiciel">logicielle</a>.
 
 ## Matériel
 
-The hardware is based on 4 main components:
-- ATmega328p microcontroller (the same as the arduino uno/nano)
-- MPU6050 accelerometer and gyro chip
-- A FTDI chip (to program the microcontroller via USB)
-- A micro SD card holder
+La cartre est basée sur quarte principaux composants :
+- Un microcontrôleur ATmega328p (le même que pour l'Arduino UNO/Nano)
+- Un accéléromètre et gyroscope MPU6050
+- Une puce FTDI (pour programmer le microcontrôleur par USB)
+- Un conecteur de cartes micro SD
 
-This board is **fully arduino compatible** and should be selected in the arduino environnement as the arduino nano.
+Cette carte est **entièrement compatible Arduino** et doit être selectionnée dans l'IDE Arduino comme un Arduino nano.
 
 ### Documents disponibles
 
-- <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Schematics.pdf">Schematics (PDF)</a>
-- <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/BOM.pdf">Bill of materials (PDF)</a>
-- <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Carte%20course%20en%20cours.sch">Autodesk Eagle schematics file</a>
-- <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Carte%20course%20en%20cours.brd">Autodesk Eagle board file</a>
+- <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Schematics.pdf">Schéma électrique (PDF)</a>
+- <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/BOM.pdf">Liste des composants (PDF)</a>
+- <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Carte%20course%20en%20cours.sch">Autodesk Eagle fichier schéma</a>
+- <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Carte%20course%20en%20cours.brd">Autodesk Eagle fichier routage</a>
 
 
 ### Schéma de brochage:
@@ -70,7 +70,7 @@ This board is **fully arduino compatible** and should be selected in the arduino
   <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_wiring.png" alt="" width=870>
 </p>
 
-**BE CAREFULL: You need to provide 3.3V to the board, plugging directly the 11.1V LiPo battery will kill it. You can step down the battery voltage with a standard DC/DC converter (also known as buck-converter) set to output 3.3V (min 200mA), like in the wiring diagram above.**
+**ATTENTION : Vous devez alimenter la carte en 3,3V, la brancher directement à la batterie 11,1V la détruierait. Vous pouvez abaisser la tension de la baterie vers du 3,3V grace à un module convertisseur DC/DC standard (aussi appelé buck-converter) réglé en 3,3V (min 200mA), comme sur le schéma ci dessus.**
 
 ## Logiciel
 
@@ -111,6 +111,5 @@ You should now be able to program your board via USB, as described in the <a hre
 - <https://github.com/dylangageot>
 
 ## Copyright et license
-heolfief/Course-en-Cours is licensed under the GNU General Public License v3.0.
-
-See the <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/LICENSE">LICENSE file</a> for more informations.
+heolfief/Course-en-Cours est sous license GNU GPL v3.0.
+Plus d'informations dans le <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/LICENSE">fichier LICENSE</a>.
