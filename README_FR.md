@@ -77,28 +77,26 @@ Cette carte est **entièrement compatible Arduino** et doit être selectionnée 
 ### Firmware
 
 <img src="https://www.arduino.cc/arduino_logo.png" alt="" width=80>
-You can program your course en cours board in C/C++ directly with the <a target="_blank" href="https://www.arduino.cc/en/main/software">arduino IDE</a> via USB, assuming you already have a bootloader installed on your board. Instructions on how to flash a bootloader <a href="#bootloader">below</a>.
+Vous pouvez programmer votre carte directement en C/C++ avec l'<a target="_blank" href="https://www.arduino.cc/en/main/software">Arduino IDE</a> par USB, à condition que vous avez déja un bootloader d'installé sur votre carte. Instructions pour flasher le bootloader <a href="#bootloader">ci dessous</a>.
 
-In the arduino IDE, select the "arduino nano" under Tools/Board, and the ATmega328p under Tools/Processor. Then select the COM port (under Tools/Port) on wich the board is plugged.
-To access all the course en cours related function, just import the "course_en_cours" library to your sketch.
-<a target="_blank" href="https://www.arduino.cc/en/Guide/Libraries">Here is a tutorial</a> if you need help for this step.
-
-You should now be able to program your board with the arduino software environement.
-
+Dans l'IDE Arduino sélectionnez l'"Arduino Nano" dans Outils/Type de carte. Ensuite, sélectionnez le port COM (dans Outils/Port) sur lequel la carte est branchée.
+Pour accéder aux fonctions course-en-cours, importez la bibilothèque "course_en_cours" dans votre croquis Arduino.
+<a target="_blank" href="https://www.arduino.cc/en/Guide/Libraries">Voici un tutoriel</a> si vous avez besoin d'aide pour cette étape.
 
 ### Bootloader
 
-In order to be able to program your board with the arduino IDE via usb, you will first need to install a bootloader on your board. Sparkfun have made an easy to understand tutorial on how to do that here : <a target="_blank" href="https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader">Installing an arduino bootloader</a>
+Pour pouvoir programmer votre carte avec l'IDE Arduino vous devez d'abbord installer un bootloader sur votre carte.
+Sparkfun propose déja un très bon tutoriel (Anglais) pour faire cela ici : <a target="_blank" href="https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader">Installing an arduino bootloader</a>
 
-Here is the wiring diagram to install the bootloader with an arduino UNO (follow the sparkfun tutorial for step by step instructions).
+Voici un schéma de cablage pour installer le bootloader avec un arduino UNO (suivez les instruction de sparkfun pour les étapes d'installation).
 
 <p align="center">
   <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/Bootloader.png" alt="" width=800>
 </p>
 
-When installing the bootloader, make sure your arduino target board is the arduino nano, as this board is arduino nano compatible.
+Avant d'installer, réglez la carte cible dans l'IDE Arduino sur "Arduino nano".
 
-You should now be able to program your board via USB, as described in the <a href="#software">software section</a>.
+Vous pouvez maintenant programmer votre carte, comme décrit dans la section <a href="#logiciel">logicielle</a>.
 
 ## Auteurs
 
