@@ -1,11 +1,14 @@
 #include "Course_en_Cours.h"
 
+Course_en_Cours::Course_en_Cours() {
+
+}
 
 void Course_en_Cours::initialiser(bool pilotage_mode) {
 
 	// Configuration pour l'interruption du pilotage manuel
 	pinMode(rc_inPin, INPUT_PULLUP);
-	attachInterrupt(digitalPinToInterrupt(rc_inPin), this.interruption, CHANGE);
+//	attachInterrupt(digitalPinToInterrupt(rc_inPin), interruption, CHANGE);
 	commande_esc = 0;
 
 	// Port série à 115200 bauds
@@ -15,7 +18,7 @@ void Course_en_Cours::initialiser(bool pilotage_mode) {
 	while (!SerialPort);
 
 	// Initialisation de la centrale inertielle
-	if (imu.begin(MPU6050_SCALE_2000DPS, MPU6050_RANGE_2G) == 0) {
+	if (centrale_inertielle.begin(MPU6050_SCALE_2000DPS, MPU6050_RANGE_2G) == 0) {
 		SerialPort.println("IMU non initialisée");
 	} else {
 		SerialPort.println("IMU initialisée");
@@ -25,12 +28,12 @@ void Course_en_Cours::initialiser(bool pilotage_mode) {
 	// d'un fichier datalog.csv si inexistant
 	sd.begin(chipSelect, SD_SCK_MHZ(16));
 
-	if (!dataFile.open("datalog.csv", O_CREAT | O_WRITE)) {
+	if (!fichier.open("datalog.csv", O_CREAT | O_WRITE)) {
 		SerialPort.println("SD  non initialisée");
 	} else {
 		// Initialisation du fichier datalog.csv
 		SerialPort.println("Fichier crée");
-		dataFile.println("t;commande;x;y;z");
+		fichier.println("t;commande;x;y;z");
 		SerialPort.println("SD  initialisée");
 	}
 
@@ -58,7 +61,7 @@ void Course_en_Cours::executer() {
 	actual_time = millis();
 	// Si on est en mode AUTOMATIQUE
 	if (mode == AUTO) {
-		for (int j = 0; j < nb_palier; i++) {
+		for (int j = 0; j < nb_palier; j++) {
 			if ((actual_time - last_time_palier) == tab_palier_ms[j]) {
 				puissance_moteur(tab_palier_pourcentage[j]);
 			}
@@ -69,11 +72,33 @@ void Course_en_Cours::executer() {
 	}
 	
 	
-	if (((actual_time - last_time) >= 5) && datalogging_enable) {
-		last_time = actual_time;
+	if (((actual_time - last_time_log) >= 5) && datalogging_enable) {
+		last_time_log = actual_time;
 		datalogging();
 	}
 	
+}
+
+void Course_en_Cours::datalogging(void) {
+
+  // Mise à jour des données
+  valeur_accel = centrale_inertielle.readNormalizeAccel();
+  
+  // Mise en forme de données puis écriture dans la carte SD
+  tampon_sd = "";
+  tampon_sd += String(nb_log) + ';' + String(commande_esc) + ';' + String(valeur_accel.XAxis) + ';' + String(valeur_accel.YAxis) + ';' + String(valeur_accel.ZAxis);
+  fichier.println(tampon_sd);
+
+  // Si le compteur à atteint la valeur de MAX_LOGGING, on arrête le datalogging
+  // Ici la valeur maximum de i (MAX_LOGGING) doit être multiplié par deux pour
+  // obtenir de le temps de logging en millisecondes : MAX_LOGGING * 2 = ms
+  if (++nb_log == MAX_LOGGING) {
+    // On ferme proprement le fichier de logging
+    fichier.close();
+    // On stop le tache de datalogging
+    datalogging_enable = 0;
+  }
+  
 }
 
 void Course_en_Cours::puissance_moteur(unsigned int pourcentage) {
@@ -112,6 +137,7 @@ void Course_en_Cours::interruption() {
 				commande_esc = 100;
 		}
 	}
+ 
 }
 
 void Course_en_Cours::palier_moteur(unsigned int ms, unsigned char pourcentage) {
@@ -121,4 +147,5 @@ void Course_en_Cours::palier_moteur(unsigned int ms, unsigned char pourcentage) 
 		tab_palier_pourcentage[nb_palier] = pourcentage;
 		nb_palier++;
 	}
+ 
 }

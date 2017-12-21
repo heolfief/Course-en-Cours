@@ -14,11 +14,10 @@ const int chipSelect = 4;
 const int escPin = 9;
 const int rc_inPin = 3;
 
-
 class Course_en_Cours {
 	
 		public:
-			
+			Course_en_Cours(void);
 			void executer(void);
 			void initialiser(bool pilotage_mode);
 			void palier_moteur(unsigned int ms, unsigned char pourcentage);
@@ -44,4 +43,4 @@ class Course_en_Cours {
 			unsigned int tab_palier_ms[MAX_PALIER];
 			unsigned char tab_palier_pourcentage[MAX_PALIER];
 			
-}
+};
