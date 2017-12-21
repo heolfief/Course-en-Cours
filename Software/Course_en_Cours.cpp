@@ -1,14 +1,20 @@
 #include "Course_en_Cours.h"
 
+extern Course_en_Cours courseEnCours;
+
 Course_en_Cours::Course_en_Cours() {
 
+}
+
+void interruptionDispatched(void) {
+  courseEnCours.interruption();
 }
 
 void Course_en_Cours::initialiser(bool pilotage_mode) {
 
 	// Configuration pour l'interruption du pilotage manuel
 	pinMode(rc_inPin, INPUT_PULLUP);
-//	attachInterrupt(digitalPinToInterrupt(rc_inPin), interruption, CHANGE);
+	attachInterrupt(digitalPinToInterrupt(rc_inPin), interruptionDispatched, CHANGE);
 	commande_esc = 0;
 
 	// Port série à 115200 bauds

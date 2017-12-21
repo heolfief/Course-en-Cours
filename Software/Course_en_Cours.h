@@ -14,6 +14,8 @@ const int chipSelect = 4;
 const int escPin = 9;
 const int rc_inPin = 3;
 
+void interruptionDispatched(void);
+
 class Course_en_Cours {
 	
 		public:
