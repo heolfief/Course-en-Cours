@@ -92,7 +92,7 @@ To access all the course en cours related function, just import the "course_en_c
 You should now be able to program your board with the arduino software environement.
 
 
-## Exemple code:
+#### Exemple code:
 ```cpp
 #include "Course_en_Cours.h
 
