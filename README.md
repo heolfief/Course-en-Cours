@@ -92,6 +92,54 @@ To access all the course en cours related function, just import the "course_en_c
 You should now be able to program your board with the arduino software environement.
 
 
+## Exemple code:
+```cpp
+#include "Course_en_Cours.h
+
+Couse_en_Cours cec;  // create Couse_en_Cours object
+
+void setup() {
+    // put your setup code here, to run once:
+    cec.initialiser(AUTO);
+    cec.palier_moteur(1000,0);
+    cec.palier_moteur(5000,50);
+    cec.palier_moteur(7500,75);
+}
+
+void loop() {
+    // put your main code here, to run repeatedly:
+    cec.executer();
+}
+```
+
+* * *
+`cec.executer(void);`
+Mandatory function, needs to be run in the loop().
+Parameters : 
+* **cec** : a variable of type Course_en_cours
+
+* * * 
+
+`cec.initialiser(bool pilotage_mode);`
+Function to set the driving mode.
+Parameters : 
+* **cec** : a variable of type Course_en_cours
+* **pilotage_mode** : the mode you want your car to run in. Can be set to "AUTO" or "MANU".
+	* AUTO : you can drive the motor within your arduino code with the palier_moteur function.
+	* MANU : palier_moteur functions are disabled, and remote control signal is redirected to the ESC. You can manualy drive the motors with a remote.
+
+* * *
+
+`cec.palier_moteur(unsigned int ms, unsigned char pourcentage);`
+The motor power step function. Use it in the setup() to set a fixed power to the motor at a certain time.
+Can be called several times to create differents steps at different times.
+Parameters : 
+* **cec** : a variable of type Course_en_cours
+* **ms** : The time in milieconds you want the function to take effect. Timer starts right after power-up.
+* **pourcentage** : This sets the speed of the motor, in percentage.
+
+* * * 
+
 ### Bootloader
 
 In order to be able to program your board with the arduino IDE via usb, you will first need to install a bootloader on your board. Sparkfun have made an easy to understand tutorial on how to do that here : <a target="_blank" href="https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader">Installing an arduino bootloader</a>
