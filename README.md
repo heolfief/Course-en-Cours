@@ -99,7 +99,6 @@ You should now be able to program your board with the arduino software environem
 Couse_en_Cours cec;  // create Couse_en_Cours object
 
 void setup() {
-    // put your setup code here, to run once:
     cec.initialiser(AUTO);
     cec.palier_moteur(1000,0);
     cec.palier_moteur(5000,50);
@@ -107,7 +106,6 @@ void setup() {
 }
 
 void loop() {
-    // put your main code here, to run repeatedly:
     cec.executer();
 }
 ```
