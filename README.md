@@ -94,7 +94,7 @@ You should now be able to program your board with the arduino software environem
 
 #### Exemple code:
 ```cpp
-#include "Course_en_Cours.h
+#include "Course_en_Cours.h"
 
 Couse_en_Cours cec;  // create Couse_en_Cours object
 
