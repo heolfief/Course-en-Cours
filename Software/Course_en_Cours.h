@@ -37,7 +37,7 @@ class Course_en_Cours {
     SdFat sd;
     SdFile fichier;
     String tampon_sd;
-    int nb_log, nb_palier, palier;
+    int nb_log, nb_palier;
     short commande_esc;
     long double temp_interrupt;
     bool esc_init, sd_init, datalogging_enable, mode;
