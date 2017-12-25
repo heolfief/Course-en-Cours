@@ -74,10 +74,10 @@ void Course_en_Cours::executer() {
   // Si on est en mode AUTOMATIQUE
   if (mode == AUTO) {
     for (int j = 0; j < nb_palier; j++) {
-      if (((actual_time - last_time_palier) >= tab_palier_ms[j]) && (j == palier)) {
+      if (((actual_time - last_time_palier) >= tab_palier_ms[j]) && (tab_palier_pourcentage[j] != 255)) {
         puissance_moteur(tab_palier_pourcentage[j]);
         commande_esc = tab_palier_pourcentage[j];
-        palier++;
+        tab_palier_pourcentage[j] = 255;
       }
     }
   } else {
