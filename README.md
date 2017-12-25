@@ -138,6 +138,13 @@ Parameters :
 
 * * * 
 
+#### Issues
+
+The actual software have some issues :
+- If the .csv file is not already on the SD card, the logging would be slower than expected
+- The logging time may vary in function of how many steps you have added
+- The object Cours_en_Cours must be called "cec" and declared as global variable
+
 ### Bootloader
 
 In order to be able to program your board with the arduino IDE via usb, you will first need to install a bootloader on your board. Sparkfun have made an easy to understand tutorial on how to do that here : <a target="_blank" href="https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader">Installing an arduino bootloader</a>
