@@ -1,13 +1,13 @@
 #include "Course_en_Cours.h"
 
-extern Course_en_Cours courseEnCours;
+extern Course_en_Cours cec;
 
 Course_en_Cours::Course_en_Cours() {
 
 }
 
 void interruptionDispatched(void) {
-  courseEnCours.interruption();
+  cec.interruption();
 }
 
 void Course_en_Cours::initialiser(bool pilotage_mode) {
