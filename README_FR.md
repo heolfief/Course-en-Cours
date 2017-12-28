@@ -103,32 +103,51 @@ void loop() {
 }
 ```
 
-* * *
-`cec.executer(void);`
-Fonction obligatoire, doit être placée dans le loop().
-Paramètres : 
-* **cec** : variable de type Course_en_cours
+<table>
+	<tbody>
+		<tr>
+			<th align="center">Function</th>
+			<th align="center">Description</th>
+			<th align="center">Parameters</th>
+		</tr>
+		<tr>
+			<td><code>cec.executer(void);</code></td>
+			<td>Fonction obligatoire, doit être placée dans le loop().</td>
+			<td>
+				<ul>
+				<li><strong>cec</strong> : variable de type Course_en_cours</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><code>cec.initialiser(bool pilotage_mode);</code></td>
+			<td>Fonction définissant le mode de pilotage. Doit être placée dans le setup().</td>
+			<td>
+				<ul>
+				<li><strong>cec</strong> : variable de type Course_en_cours</li>
+				<li><strong>pilotage_mode</strong> : le mode dans lequel vous voulez piloter votre vioture. "AUTO" ou "MANU".
+					<ul>
+						<li>AUTO : vous pouvez controller le moteur avec la fontion palier_moteur.</li>
+						<li>MANU : la fonction palier_moteur est désactivée, et le signal du récepteur RF est transmis directement a l'ESC. Vous pouvez contrôler manuellement le moteur avec une télécommande de modélisme.</li>
+					</ul>
+				</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><code>cec.palier_moteur(unsigned int ms, unsigned char pourcentage);</code></td>
+			<td>Fonction de réglage de puissance/vitess du moteur. A utliser dans le setup() pour régler la puissance/vitesse du moteur à un moment voulu de la course. Peut-être appelée plusieurs fois pour créer différents palier de vtesse à différents moments.</td>
+			<td>
+				<ul>
+					<li><strong>cec</strong> : variable de type Course_en_cours</li>
+					<li><strong>ms</strong> : Le moment en millisecondes auquel la fonction prendra effet. Le timer démarrer juste après la mise sous tension de la carte.</li>
+					<li><strong>pourcentage</strong> : Correspond à la puissance/vitesse du moteur souhaitée en pourcentages.</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
 
-* * * 
-
-`cec.initialiser(bool pilotage_mode);`
-Fonction définissant le mode de pilotage.
-Paramètres : 
-* **cec** : variable de type Course_en_cours
-* **pilotage_mode** : le mode dans lequel vous voulez piloter votre vioture. "AUTO" ou "MANU".
-	* AUTO : vous pouvez controller le moteur avec la fontion palier_moteur.
-	* MANU : la fonction palier_moteur est désactivée, et le signal du récepteur RF est transmis directement a l'ESC. Vous pouvez contrôler manuellement le moteur avec une télécommande de modélisme
-
-* * *
-
-`cec.palier_moteur(unsigned int ms, unsigned char pourcentage);`
-Fonction de réglage de puissance/vitess du moteur. A utliser dans le setup() pour régler la puissance/vitesse du moteur à un moment voulu de la course. Peut-être appelée plusieurs fois pour créer différents palier de vtesse à différents moments.
-Paramètres :
-* **cec** : variable de type Course_en_cours
-* **ms** : Le moment en millisecondes auquel la fonction prendra effet. Le timer démarrer juste après la mise sous tension de la carte.
-* **pourcentage** : Correspond à la puissance/vitesse du moteur souhaitée en pourcentages.
-
-* * * 
 
 #### Problèmes connus
 

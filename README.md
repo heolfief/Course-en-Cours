@@ -142,7 +142,7 @@ void loop() {
 		</tr>
 		<tr>
 			<td><code>cec.palier_moteur(unsigned int ms, unsigned char pourcentage);</code></td>
-			<td>Mandatory function, needs to be run in the loop().</td>
+			<td>The motor power step function. Use it in the setup() to set a fixed power to the motor at a certain time. Can be called several times to create differents steps at different times. </td>
 			<td>
 				<ul>
 					<li><strong>cec</strong> : a variable of type Course_en_cours</li>
