@@ -13,7 +13,7 @@
 <br>
 
 <p align="center">
-	<a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/README_FR.md">VERSION EN FRANCAIS / FRENCH VERSION</a>
+	<a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/README.md">VERSION EN ANGLAIS / ENGLISH VERSION</a>
 </p>
 
 ## Table of contents
@@ -142,12 +142,12 @@ void loop() {
 		</tr>
 		<tr>
 			<td><code>cec.palier_moteur(unsigned int ms, unsigned char pourcentage);</code></td>
-			<td>The motor power step function. Use it in the setup() to set a fixed power to the motor at a certain time. Can be called several times to create differents steps at different times. </td>
+			<td>The motor power step function. Use it in the setup() to set a fixed power/speed to the motor at a certain time. Can be called several times to create differents steps at different times. </td>
 			<td>
 				<ul>
 					<li><strong>cec</strong> : a variable of type Course_en_cours</li>
 					<li><strong>ms</strong> : the time in milieconds you want the function to take effect. Timer starts right after power-up.</li>
-					<li><strong>pourcentage</strong> : this sets the speed of the motor, in percentage.</li>
+					<li><strong>pourcentage</strong> : this sets the power/speed of the motor, in percentage.</li>
 				</ul>
 			</td>
 		</tr>
