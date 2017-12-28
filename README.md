@@ -109,34 +109,44 @@ void loop() {
     cec.executer();
 }
 ```
+<table>
+  <tbody>
+    <tr>
+      <th align="center">Function</th>
+      <th align="center">Description</th>
+      <th align="center">Parameters</th>
+    </tr>
+    <tr>
+      <td><code>cec.executer(void);</code></td>
+      <td>Mandatory function, needs to be run in the loop().</td>
+      <td><ul>
+	  <li><strong>cec</strong> : a variable of type Course_en_cours</li>
+          </ul></td>
+    </tr>
+    <tr>
+      <td><code>cec.initialiser(bool pilotage_mode);</code></td>
+      <td>Function to set the driving mode. Needs to be run in the setup().</td>
+      <td><ul>
+	  <li><strong>cec</strong> : a variable of type Course_en_cours</li>
+          <li><strong>pilotage_mode</strong> : the mode you want your car to run in. Can be set to "AUTO" or "MANU".
+	      <ul>
+              <li>AUTO : you can drive the motor within your arduino code with the palier_moteur function.</li>
+              <li>MANU : palier_moteur functions are disabled, and remote control signal is redirected to the ESC. You can manualy drive the motors with a remote.</li>
+              </ul></li>
+          </ul></td>
+    </tr>
+    <tr>
+      <td><code>cec.palier_moteur(unsigned int ms, unsigned char pourcentage);</code></td>
+      <td>Mandatory function, needs to be run in the loop().</td>
+      <td><ul>
+	  <li><strong>cec</strong> : a variable of type Course_en_cours</li>
+          <li><strong>ms</strong> : the time in milieconds you want the function to take effect. Timer starts right after power-up.</li>
+          <li><strong>pourcentage</strong> : this sets the speed of the motor, in percentage.</li>
+          </ul></td>
+    </tr>
+  </tbody>
+</table>
 
-* * *
-`cec.executer(void);`
-Mandatory function, needs to be run in the loop().
-Parameters : 
-* **cec** : a variable of type Course_en_cours
-
-* * * 
-
-`cec.initialiser(bool pilotage_mode);`
-Function to set the driving mode.
-Parameters : 
-* **cec** : a variable of type Course_en_cours
-* **pilotage_mode** : the mode you want your car to run in. Can be set to "AUTO" or "MANU".
-	* AUTO : you can drive the motor within your arduino code with the palier_moteur function.
-	* MANU : palier_moteur functions are disabled, and remote control signal is redirected to the ESC. You can manualy drive the motors with a remote.
-
-* * *
-
-`cec.palier_moteur(unsigned int ms, unsigned char pourcentage);`
-The motor power step function. Use it in the setup() to set a fixed power to the motor at a certain time.
-Can be called several times to create differents steps at different times.
-Parameters : 
-* **cec** : a variable of type Course_en_cours
-* **ms** : The time in milieconds you want the function to take effect. Timer starts right after power-up.
-* **pourcentage** : This sets the speed of the motor, in percentage.
-
-* * * 
 
 #### Known issues
 
