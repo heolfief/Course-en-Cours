@@ -12,6 +12,8 @@
 <HR>
 <br>
 
+<a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/README.md">VERSION EN ANGLAIS / ENGLISH VERSION</a>
+
 ## Table des matières
 
 - [Présentation](#presentation)
