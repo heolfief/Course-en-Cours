@@ -119,7 +119,7 @@ void loop() {
 		<tr>
 			<td><code>cec.executer(void);</code></td>
 			<td>Mandatory function, needs to be run in the loop().</td>
-			<td bgcolor="#79dbec">
+			<td>
 				<ul>
 				<li><strong>cec</strong> : a variable of type Course_en_cours</li>
 				</ul>
@@ -128,7 +128,7 @@ void loop() {
 		<tr>
 			<td><code>cec.initialiser(bool pilotage_mode);</code></td>
 			<td>Function to set the driving mode. Needs to be run in the setup().</td>
-			<td bgcolor="#79dbec">
+			<td>
 				<ul>
 				<li><strong>cec</strong> : a variable of type Course_en_cours</li>
 				<li><strong>pilotage_mode</strong> : the mode you want your car to run in. Can be set to "AUTO" or "MANU".
@@ -143,7 +143,7 @@ void loop() {
 		<tr>
 			<td><code>cec.palier_moteur(unsigned int ms, unsigned char pourcentage);</code></td>
 			<td>Mandatory function, needs to be run in the loop().</td>
-			<td bgcolor="#79dbec">
+			<td>
 				<ul>
 					<li><strong>cec</strong> : a variable of type Course_en_cours</li>
 					<li><strong>ms</strong> : the time in milieconds you want the function to take effect. Timer starts right after power-up.</li>
