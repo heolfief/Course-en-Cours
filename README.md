@@ -1,19 +1,19 @@
 <p align="center">
-  <a target="_blank" href="http://www.course-en-cours.com/">
-    <img src="http://www.course-en-cours.com/media/uploads/documents_utils/CeC-logo2017.png" alt="" width=360>
-  </a>
+	<a target="_blank" href="http://www.course-en-cours.com/">
+		<img src="http://www.course-en-cours.com/media/uploads/documents_utils/CeC-logo2017.png" alt="" width=360>
+	</a>
 
-  <h1 align="center">Course en cours</h1>
+<h1 align="center">Course en cours</h1>
 
-  <p align="center">
-    <a target="_blank" href="http://www.course-en-cours.com/">www.course-en-cours.com</a>
-  </p>
+<p align="center">
+	<a target="_blank" href="http://www.course-en-cours.com/">www.course-en-cours.com</a>
+</p>
 </p>
 <HR>
 <br>
 
 <p align="center">
-  <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/README_FR.md">VERSION EN FRANCAIS / FRENCH VERSION</a>
+	<a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/README_FR.md">VERSION EN FRANCAIS / FRENCH VERSION</a>
 </p>
 
 ## Table of contents
@@ -96,55 +96,62 @@ You should now be able to program your board with the arduino software environem
 ```cpp
 #include "Course_en_Cours.h"
 
-Couse_en_Cours cec;  // create Couse_en_Cours object
+Couse_en_Cours cec;	 // create Couse_en_Cours object
 
 void setup() {
-    cec.initialiser(AUTO);
-    cec.palier_moteur(1000,0);
-    cec.palier_moteur(5000,50);
-    cec.palier_moteur(7500,75);
+	cec.initialiser(AUTO);
+	cec.palier_moteur(1000,0);
+	cec.palier_moteur(5000,50);
+	cec.palier_moteur(7500,75);
 }
 
 void loop() {
-    cec.executer();
+	cec.executer();
 }
 ```
 <table>
-  <tbody>
-    <tr>
-      <th align="center">Function</th>
-      <th align="center">Description</th>
-      <th align="center">Parameters</th>
-    </tr>
-    <tr>
-      <td><code>cec.executer(void);</code></td>
-      <td>Mandatory function, needs to be run in the loop().</td>
-      <td><ul>
-	  <li><strong>cec</strong> : a variable of type Course_en_cours</li>
-          </ul></td>
-    </tr>
-    <tr>
-      <td><code>cec.initialiser(bool pilotage_mode);</code></td>
-      <td>Function to set the driving mode. Needs to be run in the setup().</td>
-      <td><ul>
-	  <li><strong>cec</strong> : a variable of type Course_en_cours</li>
-          <li><strong>pilotage_mode</strong> : the mode you want your car to run in. Can be set to "AUTO" or "MANU".
-	      <ul>
-              <li>AUTO : you can drive the motor within your arduino code with the palier_moteur function.</li>
-              <li>MANU : palier_moteur functions are disabled, and remote control signal is redirected to the ESC. You can manualy drive the motors with a remote.</li>
-              </ul></li>
-          </ul></td>
-    </tr>
-    <tr>
-      <td><code>cec.palier_moteur(unsigned int ms, unsigned char pourcentage);</code></td>
-      <td>Mandatory function, needs to be run in the loop().</td>
-      <td><ul>
-	  <li><strong>cec</strong> : a variable of type Course_en_cours</li>
-          <li><strong>ms</strong> : the time in milieconds you want the function to take effect. Timer starts right after power-up.</li>
-          <li><strong>pourcentage</strong> : this sets the speed of the motor, in percentage.</li>
-          </ul></td>
-    </tr>
-  </tbody>
+	<tbody>
+		<tr>
+			<th align="center">Function</th>
+			<th align="center">Description</th>
+			<th align="center">Parameters</th>
+		</tr>
+		<tr>
+			<td><code>cec.executer(void);</code></td>
+			<td>Mandatory function, needs to be run in the loop().</td>
+			<td bgcolor="#79dbec">
+				<ul>
+				<li><strong>cec</strong> : a variable of type Course_en_cours</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><code>cec.initialiser(bool pilotage_mode);</code></td>
+			<td>Function to set the driving mode. Needs to be run in the setup().</td>
+			<td bgcolor="#79dbec">
+				<ul>
+				<li><strong>cec</strong> : a variable of type Course_en_cours</li>
+				<li><strong>pilotage_mode</strong> : the mode you want your car to run in. Can be set to "AUTO" or "MANU".
+					<ul>
+						<li>AUTO : you can drive the motor within your arduino code with the palier_moteur function.</li>
+						<li>MANU : palier_moteur functions are disabled, and remote control signal is redirected to the ESC. You can manualy drive the motors with a remote.</li>
+					</ul>
+				</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><code>cec.palier_moteur(unsigned int ms, unsigned char pourcentage);</code></td>
+			<td>Mandatory function, needs to be run in the loop().</td>
+			<td bgcolor="#79dbec">
+				<ul>
+					<li><strong>cec</strong> : a variable of type Course_en_cours</li>
+					<li><strong>ms</strong> : the time in milieconds you want the function to take effect. Timer starts right after power-up.</li>
+					<li><strong>pourcentage</strong> : this sets the speed of the motor, in percentage.</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
 </table>
 
 
