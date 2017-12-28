@@ -142,8 +142,8 @@ Parameters :
 
 The actual software have some issues :
 - If the .csv file is not already on the SD card, the logging would be slower than expected. Make sure that the file already exists on the card.
-- The logging time may vary depending of how many steps (palier_moteur functions) you have added
-- The object Cours_en_Cours must be called "cec" and declared as global variable
+- The logging time may vary depending of how many steps (palier_moteur functions) you have added.
+- The object Course_en_Cours must be called "cec" and declared as global variable (away from the loop() and setup(), or from any fonction).
 
 ### Bootloader
 

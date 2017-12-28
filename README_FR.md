@@ -83,6 +83,60 @@ Dans l'IDE Arduino sélectionnez l'"Arduino Nano" dans Outils/Type de carte. Ens
 Pour accéder aux fonctions course-en-cours, importez la bibilothèque "course_en_cours" dans votre croquis Arduino.
 <a target="_blank" href="https://www.arduino.cc/en/Guide/Libraries">Voici un tutoriel</a> si vous avez besoin d'aide pour cette étape.
 
+Vous devriez maintenant pouvoir programmer votre carte avec l'IDE Arduino.
+
+#### Exemple de code:
+```cpp
+#include "Course_en_Cours.h"
+
+Couse_en_Cours cec;  // create Couse_en_Cours object
+
+void setup() {
+    cec.initialiser(AUTO);
+    cec.palier_moteur(1000,0);
+    cec.palier_moteur(5000,50);
+    cec.palier_moteur(7500,75);
+}
+
+void loop() {
+    cec.executer();
+}
+```
+
+* * *
+`cec.executer(void);`
+Fonction obligatoire, doit être placée dans le loop().
+Paramètres : 
+* **cec** : variable de type Course_en_cours
+
+* * * 
+
+`cec.initialiser(bool pilotage_mode);`
+Fonction définissant le mode de pilotage.
+Paramètres : 
+* **cec** : variable de type Course_en_cours
+* **pilotage_mode** : le mode dans lequel vous voulez piloter votre vioture. "AUTO" ou "MANU".
+	* AUTO : vous pouvez controller le moteur avec la fontion palier_moteur.
+	* MANU : la fonction palier_moteur est désactivée, et le signal du récepteur RF est transmis directement a l'ESC. Vous pouvez contrôler manuellement le moteur avec une télécommande de modélisme
+
+* * *
+
+`cec.palier_moteur(unsigned int ms, unsigned char pourcentage);`
+Fonction de réglage de puissance/vitess du moteur. A utliser dans le setup() pour régler la puissance/vitesse du moteur à un moment voulu de la course. Peut-être appelée plusieurs fois pour créer différents palier de vtesse à différents moments.
+Paramètres :
+* **cec** : variable de type Course_en_cours
+* **ms** : Le moment en millisecondes auquel la fonction prendra effet. Le timer démarrer juste après la mise sous tension de la carte.
+* **pourcentage** : Correspond à la puissance/vitesse du moteur souhaitée en pourcentages.
+
+* * * 
+
+#### Problèmes connus
+
+Le logiciel actuel présente encore quelques problèmes :
+- Si le fichier .csv n'est pas déja sur la carte SD, l'enregistrement des données sera plus long qu'attendu. Asurez-vous que le fichier existe déja sur la carte SD pour évitr le problème.
+- Le temps d'enregistrement des données peut fluctuer en fonction du nombre de fonction palier_moteur appelées.
+- L'objet Course_en_Cours doit obligatoirement être appelé "cec" et déclaré comme variable globale (en dehors du loop() et du setup() ou de tout autre fonction.
+
 ### Bootloader
 
 Pour pouvoir programmer votre carte avec l'IDE Arduino vous devez d'abbord installer un bootloader sur votre carte.
