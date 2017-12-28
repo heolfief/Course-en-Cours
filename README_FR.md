@@ -12,7 +12,10 @@
 <HR>
 <br>
 
-<a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/README.md">VERSION EN ANGLAIS / ENGLISH VERSION</a>
+
+<p align="center">
+	<a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/README.md">VERSION EN ANGLAIS / ENGLISH VERSION</a>
+</p>
 
 ## Table des matières
 
