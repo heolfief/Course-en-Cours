@@ -138,7 +138,7 @@ Parameters :
 
 * * * 
 
-#### Issues
+#### Known issues
 
 The actual software have some issues :
 - If the .csv file is not already on the SD card, the logging would be slower than expected. Make sure that the file already exists on the card.
