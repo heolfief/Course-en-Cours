@@ -59,6 +59,18 @@ La cartre est basée sur quarte principaux composants :
 
 Cette carte est **entièrement compatible Arduino** et doit être selectionnée dans l'IDE Arduino comme un Arduino nano.
 
+
+### Dimensions
+<table border="0">
+	<tbody>
+		<tr>
+			<th align="center"><img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/dim.png" alt="" width=400></th>
+			<th align="center"><img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/echelle.png" alt="" width=400></th>
+		</tr>
+	</tbody>
+</table>
+
+
 ### Documents disponibles
 
 - <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Schematics.pdf">Schéma électrique (PDF)</a>
