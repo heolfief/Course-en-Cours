@@ -68,6 +68,17 @@ This board is **fully arduino compatible** and should be selected in the arduino
 - <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Carte%20course%20en%20cours.brd">Autodesk Eagle board file</a>
 
 
+### Board form factor
+<table border="0">
+	<tbody>
+		<tr>
+			<th align="center"><img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/dim.png" alt="" width=400></th>
+			<th align="center"><img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/echelle.png" alt="" width=400></th>
+		</tr>
+	</tbody>
+</table>
+
+
 ### PCB pinout diagram:
 ![PCB pinout](https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_pinout.jpg)
 
