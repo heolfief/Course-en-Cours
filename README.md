@@ -102,7 +102,7 @@ To access all the course en cours related function, just import the "course_en_c
 
 You should now be able to program your board with the arduino software environement.
 
-### Needed library
+#### Needed library
 
 - [MPU6050](https://github.com/jarzebski/Arduino-MPU6050) by jarzebski : Allows us to use the IMU.
 - [SDFat](https://github.com/greiman/SdFat) by greiman : Allows us to get a high speed SD card communication.
