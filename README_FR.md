@@ -102,6 +102,12 @@ Pour accéder aux fonctions course-en-cours, importez la bibilothèque "course_e
 
 Vous devriez maintenant pouvoir programmer votre carte avec l'IDE Arduino.
 
+
+#### Bibliothèques requises
+
+- [MPU6050](https://github.com/jarzebski/Arduino-MPU6050) par **_jarzebski_** : Interfaçage avec la centrale inertielle.
+- [SDFat](https://github.com/greiman/SdFat) par **_greiman_** : Interfaçage haute vitesse avec une carte SD.
+
 #### Exemple de code:
 ```cpp
 #include "Course_en_Cours.h"
