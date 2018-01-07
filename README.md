@@ -104,8 +104,8 @@ You should now be able to program your board with the arduino software environem
 
 #### Needed libraries
 
-- [MPU6050](https://github.com/jarzebski/Arduino-MPU6050) by jarzebski : Allows us to use the IMU.
-- [SDFat](https://github.com/greiman/SdFat) by greiman : Allows us to get a high speed SD card communication.
+- [MPU6050](https://github.com/jarzebski/Arduino-MPU6050) by **_jarzebski_** : Allows us to use the IMU.
+- [SDFat](https://github.com/greiman/SdFat) by **_greiman_** : Allows us to get a high speed SD card communication.
 
 #### Exemple code:
 ```cpp
