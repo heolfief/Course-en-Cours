@@ -13,7 +13,7 @@
 <br>
 
 <p align="center">
-	<img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/france-circle-128.png" width=30>
+	<img src="https://github.com/heolfief/Course-en-Cours/blob/master/Resources/france-circle-128.png" width=30>
 	<a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/README_FR.md">VERSION EN FRANCAIS / FRENCH VERSION</a>
 </p>
 
@@ -73,19 +73,19 @@ This board is **fully arduino compatible** and should be selected in the arduino
 <table border="0">
 	<tbody>
 		<tr>
-			<th align="center"><img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/dim.png" alt="" width=400></th>
-			<th align="center"><img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/echelle.png" alt="" width=400></th>
+			<th align="center"><img src="https://github.com/heolfief/Course-en-Cours/blob/master/Resources/dim.png" alt="" width=400></th>
+			<th align="center"><img src="https://github.com/heolfief/Course-en-Cours/blob/master/Resources/echelle.png" alt="" width=400></th>
 		</tr>
 	</tbody>
 </table>
 
 
 ### PCB pinout diagram:
-![PCB pinout](https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_pinout.jpg)
+![PCB pinout](https://github.com/heolfief/Course-en-Cours/blob/master/Resources/PCB_pinout.jpg)
 
 ### PCB wiring diagram:
 <p align="center">
-  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_wiring.png" alt="" width=870>
+  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Resources/PCB_wiring.png" alt="" width=870>
 </p>
 
 **BE CAREFULL: You need to provide 3.3V to the board, plugging directly the 11.1V LiPo battery will kill it. You can step down the battery voltage with a standard DC/DC converter (also known as buck-converter) set to output 3.3V (min 200mA), like in the wiring diagram above.**
@@ -185,7 +185,7 @@ In order to be able to program your board with the arduino IDE via usb, you will
 Here is the wiring diagram to install the bootloader with an arduino UNO (follow the sparkfun tutorial for step by step instructions).
 
 <p align="center">
-  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/Bootloader.png" alt="" width=800>
+  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Resources/Bootloader.png" alt="" width=800>
 </p>
 
 When installing the bootloader, make sure your arduino target board is the arduino nano, as this board is arduino nano compatible.
