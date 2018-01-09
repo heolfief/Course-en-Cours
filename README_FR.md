@@ -14,7 +14,7 @@
 
 
 <p align="center">
-	<img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/england-circle-128.png" width=30>
+	<img src="https://github.com/heolfief/Course-en-Cours/blob/master/Resources/england-circle-128.png" width=30>
 	<a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/README.md">VERSION EN ANGLAIS / ENGLISH VERSION</a>
 </p>
 
@@ -65,8 +65,8 @@ Cette carte est **entièrement compatible Arduino** et doit être selectionnée 
 <table border="0">
 	<tbody>
 		<tr>
-			<th align="center"><img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/dim.png" alt="" width=400></th>
-			<th align="center"><img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/echelle.png" alt="" width=400></th>
+			<th align="center"><img src="https://github.com/heolfief/Course-en-Cours/blob/master/Resources/dim.png" alt="" width=400></th>
+			<th align="center"><img src="https://github.com/heolfief/Course-en-Cours/blob/master/Resources/echelle.png" alt="" width=400></th>
 		</tr>
 	</tbody>
 </table>
@@ -81,11 +81,11 @@ Cette carte est **entièrement compatible Arduino** et doit être selectionnée 
 
 
 ### Schéma de brochage:
-![PCB pinout](https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_pinout.jpg)
+![PCB pinout](https://github.com/heolfief/Course-en-Cours/blob/master/Resources/PCB_pinout.jpg)
 
 ### Schéma de cablage complet du système:
 <p align="center">
-  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/PCB_wiring.png" alt="" width=870>
+  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Resources/PCB_wiring.png" alt="" width=870>
 </p>
 
 **ATTENTION : Vous devez alimenter la carte en 3,3V, la brancher directement à la batterie 11,1V la détruierait. Vous pouvez abaisser la tension de la baterie vers du 3,3V grace à un module convertisseur DC/DC standard (aussi appelé buck-converter) réglé en 3,3V (min 200mA), comme sur le schéma ci dessus.**
@@ -188,7 +188,7 @@ Sparkfun propose déja un très bon tutoriel (Anglais) pour faire cela ici : <a 
 Voici un schéma de cablage pour installer le bootloader avec un arduino UNO (suivez les instruction de sparkfun pour les étapes d'installation).
 
 <p align="center">
-  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/Bootloader.png" alt="" width=800>
+  <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Resources/Bootloader.png" alt="" width=800>
 </p>
 
 Avant d'installer, réglez la carte cible dans l'IDE Arduino sur "Arduino nano".
