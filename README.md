@@ -6,7 +6,6 @@
 <h1 align="center">Course en cours</h1>
 
 <p align="center">
-	<img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/france-circle-128.png" width=30>
 	<a target="_blank" href="http://www.course-en-cours.com/">www.course-en-cours.com</a>
 </p>
 </p>
@@ -14,6 +13,7 @@
 <br>
 
 <p align="center">
+	<img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/france-circle-128.png" width=30>
 	<a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/README_FR.md">VERSION EN FRANCAIS / FRENCH VERSION</a>
 </p>
 
