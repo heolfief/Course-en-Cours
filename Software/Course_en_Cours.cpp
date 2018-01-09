@@ -105,8 +105,8 @@ void Course_en_Cours::executer() {
     puissance_moteur(commande_esc);
   }
 
-  // Est-il temps de datalogger et pouvons-nous datalogger ? (toutes les MAX_LOGGING millisecondes)
-  if (((actual_time - last_time_log) >= MAX_LOGGING) && datalogging_enable && sd_init) {
+  // Est-il temps de datalogger et pouvons-nous datalogger ? (toutes les 5 millisecondes)
+  if (((actual_time - last_time_log) >= 5) && datalogging_enable && sd_init) {
     // On actualise le temps à laquel on éxecute le datalogging
     last_time_log = actual_time;
     // On effectue le datalogging
