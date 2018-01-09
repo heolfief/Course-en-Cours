@@ -14,6 +14,7 @@
 
 
 <p align="center">
+	<img src="https://github.com/heolfief/Course-en-Cours/blob/master/Documentation/files/england-circle-128.png" width=30>
 	<a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/README.md">VERSION EN ANGLAIS / ENGLISH VERSION</a>
 </p>
 
