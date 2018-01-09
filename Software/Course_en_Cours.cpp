@@ -67,7 +67,6 @@ void Course_en_Cours::initialiser(bool pilotage_mode) {
   datalogging_enable = 1;
   nb_log = 0;
   nb_palier = 0;
-  palier = 0;
   mode = pilotage_mode;
 
 }
