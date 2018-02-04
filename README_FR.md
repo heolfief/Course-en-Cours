@@ -44,7 +44,7 @@ Ce projet est sous **license libre GPU** (<a target="_blank" href="https://githu
 Pour pouvoir programmer votre carte course en cours avec l'IDE d'arduino via USB, vous devez d'abord y installer un bootloader.
 Vous trouverez les instructions nécessaires dans la section <a href="#logiciel">logicielle</a>.
 
-Après cette étape faite, vous devriez pouvoir programmer votre carte comme si elle était un arduino nano.
+Après cette étape faite, vous devriez pouvoir programmer votre carte comme si elle était un arduino pro mini.
 
 Il vous suffit d'installer la bibliothèque course-en-cours (<a href="#logiciel">lien dans la section logicielle</a>) et importez-la dans votre croquis arduino. <a target="_blank" href="https://www.arduino.cc/en/Guide/Libraries">Voici un tutoriel</a> pour importer une bibliothèque si vous avez besion d'aide.
 
@@ -53,12 +53,12 @@ Vous pouvez maintenant programmer votre carte, comme décrit dans la section <a 
 ## Matériel
 
 La cartre est basée sur quarte principaux composants :
-- Un microcontrôleur ATmega328p (le même que pour l'Arduino UNO/Nano)
+- Un microcontrôleur ATmega328p (le même que pour l'Arduino uno/nano/pro mini)
 - Un accéléromètre et gyroscope MPU6050
 - Une puce FTDI (pour programmer le microcontrôleur par USB)
 - Un conecteur de cartes micro SD
 
-Cette carte est **entièrement compatible Arduino** et doit être selectionnée dans l'IDE Arduino comme un Arduino nano.
+Cette carte est **entièrement compatible Arduino** et doit être selectionnée dans l'IDE Arduino comme un Arduino pro mini (ATmega328p, 3.3V 8MHz).
 
 
 ### Dimensions
@@ -98,7 +98,7 @@ Cette carte est **entièrement compatible Arduino** et doit être selectionnée 
 <img src="https://www.arduino.cc/arduino_logo.png" alt="" width=80>
 Vous pouvez programmer votre carte directement en C/C++ avec l'<a target="_blank" href="https://www.arduino.cc/en/main/software">Arduino IDE</a> par USB, à condition que vous avez déja un bootloader d'installé sur votre carte. Instructions pour flasher le bootloader <a href="#bootloader">ci dessous</a>.
 
-Dans l'IDE Arduino sélectionnez l'"Arduino Nano" dans Outils/Type de carte. Ensuite, sélectionnez le port COM (dans Outils/Port) sur lequel la carte est branchée.
+Dans l'IDE Arduino sélectionnez l'"Arduino pro mini" dans Outils/Type de carte et "ATmega328p, 3.3V 8MHz" dans "Outils/Processeur. Ensuite, sélectionnez le port COM (dans Outils/Port) sur lequel la carte est branchée.
 Pour accéder aux fonctions course-en-cours, importez la bibilothèque "course_en_cours" dans votre croquis Arduino.
 <a target="_blank" href="https://www.arduino.cc/en/Guide/Libraries">Voici un tutoriel</a> si vous avez besoin d'aide pour cette étape.
 
@@ -192,7 +192,7 @@ Voici un schéma de cablage pour installer le bootloader avec un arduino UNO (su
   <img src="https://github.com/heolfief/Course-en-Cours/blob/master/Resources/Bootloader.png" alt="" width=800>
 </p>
 
-Avant d'installer, réglez la carte cible dans l'IDE Arduino sur "Arduino nano".
+Avant d'installer, réglez la carte cible dans l'IDE Arduino sur "Arduino pro mini (ATmega328p, 3.3V 8MHz)".
 
 Vous pouvez maintenant programmer votre carte, comme décrit dans la section <a href="#logiciel">logicielle</a>.
 
