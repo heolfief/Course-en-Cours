@@ -50,6 +50,8 @@ Il vous suffit d'installer la bibliothèque course-en-cours (<a href="#logiciel"
 
 Vous pouvez maintenant programmer votre carte, comme décrit dans la section <a href="#logiciel">logicielle</a>.
 
+La fonction delay() provenant d'Arduino ne doit pas être utilisé dans votre programme puisqu'elle bloquerai le proccessus de notre bibliothèque.
+
 ## Matériel
 
 La cartre est basée sur quarte principaux composants :
