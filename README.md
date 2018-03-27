@@ -104,6 +104,8 @@ To access all the course en cours related function, just import the "course_en_c
 
 You should now be able to program your board with the arduino software environement.
 
+The delay() function from the Arduino IDE shouldn't be used in your program because it will block the process of our library.
+
 #### Needed libraries
 
 - [MPU6050](https://github.com/jarzebski/Arduino-MPU6050) by **_jarzebski_** : Allows us to use the IMU.
