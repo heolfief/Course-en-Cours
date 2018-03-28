@@ -67,7 +67,7 @@ This board is **fully arduino compatible** and should be selected in the arduino
 - <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/BOM.pdf">Bill of materials (PDF)</a>
 - <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Carte%20course%20en%20cours.sch">Autodesk Eagle schematics file</a>
 - <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Carte%20course%20en%20cours.brd">Autodesk Eagle board file</a>
-- <a href="https://github.com/heolfief/Course-en-Cours/tree/master/Hardware/Gerbers">Gerber files</a>
+- <a href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Gerbers.zip">Gerber files</a>
 
 
 ### Board form factor
