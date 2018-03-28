@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2827,6 +2827,9 @@ Pin pitch:0.1"
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="1X04"/>
+</packageinstances>
 </package3d>
 <package3d name="MOLEX-1X4" urn="urn:adsk.eagle:package:38087/1" type="box" library_version="1">
 <description>Molex 4-Pin Plated Through-Hole
@@ -2838,6 +2841,9 @@ Datasheet referenced for footprint
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="MOLEX-1X4"/>
+</packageinstances>
 </package3d>
 <package3d name="SCREWTERMINAL-3.5MM-4" urn="urn:adsk.eagle:package:38090/1" type="box" library_version="1">
 <description>Screw Terminal  3.5mm Pitch -4 Pin PTH
@@ -2849,6 +2855,9 @@ Datasheet referenced for footprint
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="SCREWTERMINAL-3.5MM-4"/>
+</packageinstances>
 </package3d>
 <package3d name="1X04_1.27MM" urn="urn:adsk.eagle:package:38086/1" type="box" library_version="1">
 <description>Plated Through Hole - 4 Pin
@@ -2859,6 +2868,9 @@ Pin pitch: 1.27mm
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="1X04_1.27MM"/>
+</packageinstances>
 </package3d>
 <package3d name="1X04_LOCK" urn="urn:adsk.eagle:package:38089/1" type="box" library_version="1">
 <description>Plated Through Hole - 4 Pin Locking Footprint
@@ -2870,6 +2882,9 @@ Pin pitch:0.1"
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="1X04_LOCK"/>
+</packageinstances>
 </package3d>
 <package3d name="1X04_LOCK_LONGPADS" urn="urn:adsk.eagle:package:38091/1" type="box" library_version="1">
 <description>Plated Through Hole - 4 Pin Long Pads w/ Locking Footprint
@@ -2881,6 +2896,9 @@ Pin pitch:0.1"
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="1X04_LOCK_LONGPADS"/>
+</packageinstances>
 </package3d>
 <package3d name="MOLEX-1X4_LOCK" urn="urn:adsk.eagle:package:38092/1" type="box" library_version="1">
 <description>Molex 4-Pin Plated Through-Hole Locking
@@ -2893,6 +2911,9 @@ Datasheet referenced for footprint
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="MOLEX-1X4_LOCK"/>
+</packageinstances>
 </package3d>
 <package3d name="1X04_SMD_RA_MALE" urn="urn:adsk.eagle:package:38093/1" type="box" library_version="1">
 <description>SMD - 4 Pin Right Angle Male Header
@@ -2904,6 +2925,9 @@ Pin pitch:0.1"
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="1X04_SMD_RA_MALE"/>
+</packageinstances>
 </package3d>
 <package3d name="1X04_LONGPADS" urn="urn:adsk.eagle:package:38098/1" type="box" library_version="1">
 <description>Plated Through Hole - 4 Pin Long Pads
@@ -2914,6 +2938,9 @@ Pin pitch:0.1"
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="1X04_LONGPADS"/>
+</packageinstances>
 </package3d>
 <package3d name="1X04_NO_SILK" urn="urn:adsk.eagle:package:38094/1" type="box" library_version="1">
 <description>Plated Through Hole - 4 Pin No Silk Outline
@@ -2924,6 +2951,9 @@ Pin pitch:0.1"
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="1X04_NO_SILK"/>
+</packageinstances>
 </package3d>
 <package3d name="JST-4-PTH" urn="urn:adsk.eagle:package:38101/1" type="box" library_version="1">
 <description>JST Right Angle 4 Pin Plated Through Hole
@@ -2935,6 +2965,9 @@ Datasheet referenced for footprint
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="JST-4-PTH"/>
+</packageinstances>
 </package3d>
 <package3d name="SCREWTERMINAL-3.5MM-4_LOCK" urn="urn:adsk.eagle:package:38095/1" type="box" library_version="1">
 <description>Screw Terminal  3.5mm Pitch -4 Pin PTH Locking
@@ -2947,6 +2980,9 @@ Datasheet referenced for footprint
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="SCREWTERMINAL-3.5MM-4_LOCK"/>
+</packageinstances>
 </package3d>
 <package3d name="1X04_1MM_RA" urn="urn:adsk.eagle:package:38096/1" type="box" library_version="1">
 <description>SMD- 4 Pin Right Angle 
@@ -2957,6 +2993,9 @@ Pin pitch:0.1"
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="1X04_1MM_RA"/>
+</packageinstances>
 </package3d>
 <package3d name="1X04_SMD_VERTICAL_COMBO" urn="urn:adsk.eagle:package:38097/1" type="box" library_version="1">
 <description>SMD - 4 Pin Vertical Connector
@@ -2968,6 +3007,9 @@ Pin pitch:0.1"
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="1X04_SMD_VERTICAL_COMBO"/>
+</packageinstances>
 </package3d>
 <package3d name="1X04_SMD_LONG" urn="urn:adsk.eagle:package:38099/1" type="box" library_version="1">
 <description>SMD - 4 Pin w/ Long Solder Pads
@@ -2979,6 +3021,9 @@ Pin pitch:0.1"
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="1X04_SMD_LONG"/>
+</packageinstances>
 </package3d>
 <package3d name="JST-4-PTH-VERT" urn="urn:adsk.eagle:package:38102/1" type="box" library_version="1">
 <description>JST Vertical 4 Pin Plated Through Hole
@@ -2990,6 +3035,9 @@ Datasheet referenced for footprint
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="JST-4-PTH-VERT"/>
+</packageinstances>
 </package3d>
 <package3d name="1X04_SMD_RA_FEMALE" urn="urn:adsk.eagle:package:38100/1" type="box" library_version="1">
 <description>SMD - 4 Pin Right-Angle Female Header
@@ -3001,6 +3049,9 @@ Pin pitch:0.1"
 Example device(s):
 CONN_04
 </description>
+<packageinstances>
+<packageinstance name="1X04_SMD_RA_FEMALE"/>
+</packageinstances>
 </package3d>
 </packages3d>
 <symbols>
@@ -17216,25 +17267,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J9" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="OSHW-LOGO" device="M" package3d_urn="urn:adsk.eagle:package:37126/1"/>
+<part name="J10" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1" value="GPIO"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <wire x1="272.796" y1="111.76" x2="167.64" y2="111.76" width="0.6096" layer="94" style="longdash"/>
-<wire x1="167.64" y1="132.08" x2="167.64" y2="78.74" width="0.6096" layer="94" style="longdash"/>
-<wire x1="167.64" y1="78.74" x2="167.64" y2="0.254" width="0.6096" layer="94" style="longdash"/>
+<wire x1="167.64" y1="132.08" x2="167.64" y2="53.34" width="0.6096" layer="94" style="longdash"/>
+<wire x1="167.64" y1="53.34" x2="167.64" y2="0.254" width="0.6096" layer="94" style="longdash"/>
 <wire x1="167.64" y1="132.08" x2="167.64" y2="178.816" width="0.6096" layer="94" style="longdash"/>
 <wire x1="0.254" y1="132.08" x2="96.52" y2="132.08" width="0.6096" layer="94" style="longdash"/>
-<wire x1="96.52" y1="132.08" x2="96.52" y2="78.74" width="0.6096" layer="94" style="longdash"/>
-<wire x1="96.52" y1="78.74" x2="96.52" y2="0.254" width="0.6096" layer="94" style="longdash"/>
+<wire x1="96.52" y1="132.08" x2="96.52" y2="53.34" width="0.6096" layer="94" style="longdash"/>
+<wire x1="96.52" y1="53.34" x2="96.52" y2="0.254" width="0.6096" layer="94" style="longdash"/>
 <wire x1="167.64" y1="132.08" x2="96.52" y2="132.08" width="0.6096" layer="94" style="longdash"/>
 <text x="10.16" y="15.24" size="6.4516" layer="94" font="vector" ratio="12">MCU</text>
 <text x="185.42" y="119.38" size="6.4516" layer="94" font="vector" ratio="12">SD</text>
 <text x="248.92" y="96.52" size="6.4516" layer="94" font="vector" ratio="12">IMU</text>
 <text x="116.84" y="162.56" size="6.4516" layer="94" font="vector" ratio="12">FTDI</text>
 <text x="170.18" y="22.86" size="2.286" layer="94" font="vector" ratio="12">Released under the GNU General Public License v3.0</text>
-<wire x1="167.64" y1="78.74" x2="96.52" y2="78.74" width="0.6096" layer="94" style="longdash"/>
-<text x="101.6" y="83.82" size="6.4516" layer="94" font="vector" ratio="12">CONNECTORS</text>
+<wire x1="167.64" y1="53.34" x2="96.52" y2="53.34" width="0.6096" layer="94" style="longdash"/>
+<text x="101.6" y="58.42" size="6.4516" layer="94" font="vector" ratio="12">CONNECTORS</text>
 </plain>
 <instances>
 <instance part="U2" gate="U$1" x="50.8" y="68.58"/>
@@ -17314,6 +17366,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="J9" gate="G$1" x="10.16" y="142.24" rot="MR90"/>
 <instance part="P+2" gate="1" x="81.28" y="33.02"/>
 <instance part="LOGO1" gate="G$1" x="259.08" y="30.48"/>
+<instance part="J10" gate="G$1" x="124.46" y="78.74" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -17982,6 +18035,54 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U1" gate="U1" pin="HEATSINK"/>
 <wire x1="43.18" y1="167.64" x2="45.72" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GPIO1" class="0">
+<segment>
+<pinref part="U2" gate="U$1" pin="PC0(ADC0)"/>
+<wire x1="73.66" y1="99.06" x2="76.2" y2="99.06" width="0.1524" layer="91"/>
+<label x="76.2" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J10" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="81.28" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
+<label x="114.3" y="81.28" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="GPIO2" class="0">
+<segment>
+<pinref part="U2" gate="U$1" pin="PC1(ADC1)"/>
+<wire x1="73.66" y1="96.52" x2="76.2" y2="96.52" width="0.1524" layer="91"/>
+<label x="76.2" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J10" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="78.74" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
+<label x="114.3" y="78.74" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="GPIO3" class="0">
+<segment>
+<pinref part="U2" gate="U$1" pin="PC2(ADC2)"/>
+<wire x1="73.66" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
+<label x="76.2" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J10" gate="G$1" pin="3"/>
+<wire x1="119.38" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
+<label x="114.3" y="76.2" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="GPIO4" class="0">
+<segment>
+<pinref part="U2" gate="U$1" pin="PC3(ADC3)"/>
+<wire x1="73.66" y1="91.44" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
+<label x="76.2" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J10" gate="G$1" pin="4"/>
+<wire x1="119.38" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
+<label x="114.3" y="73.66" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 </nets>
