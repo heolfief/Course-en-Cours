@@ -80,7 +80,7 @@ Cette carte est **entièrement compatible Arduino** et doit être selectionnée 
 - <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/BOM.pdf">Liste des composants (PDF)</a>
 - <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Carte%20course%20en%20cours.sch">Autodesk Eagle fichier schéma</a>
 - <a target="_blank" href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Carte%20course%20en%20cours.brd">Autodesk Eagle fichier routage</a>
-- <a href="https://github.com/heolfief/Course-en-Cours/tree/master/Hardware/Gerbers">Fichiers Gerber</a>
+- <a href="https://github.com/heolfief/Course-en-Cours/blob/master/Hardware/Gerbers.zip">Fichiers Gerber</a>
 
 
 ### Schéma de brochage:
